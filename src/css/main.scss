@@ -86,32 +86,38 @@
     .main {
         flex-direction: column;
         align-items: stretch;
-        gap: 0;
+        gap: 1em;
 
         &__sectionA {
-            border-radius: 0;
             width: 100vw;
             position: static;
             margin: 0;
             justify-content: start;
             align-items: start;
-            padding: clamp(1.4em, 1em + 1vw, 2em);
+            padding: 2em;
 
             &__title,
             &__subtitle {
                 margin: 0;
                 padding: 0;
             }
+            
+            &__subtitle{
+                padding-left: 1em;
+            }
         }
 
         &__contact {
-            border-radius: 0;
             width: 100vw;
             position: static;
             margin: 0;
-            justify-content: start;
-            align-items: start;
-            padding: clamp(1.4em, 1em + 1vw, 2em);
+            justify-content: center;
+            align-items: center;
+            padding: 2em;
+            
+            span{
+                padding-left: 1em;
+            }
         }
     }
 }

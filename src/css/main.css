@@ -77,28 +77,32 @@
   .main {
     flex-direction: column;
     align-items: stretch;
-    gap: 0;
+    gap: 1em;
   }
   .main__sectionA {
-    border-radius: 0;
     width: 100vw;
     position: static;
     margin: 0;
     justify-content: start;
     align-items: start;
-    padding: clamp(1.4em, 1em + 1vw, 2em);
+    padding: 2em;
   }
   .main__sectionA__title, .main__sectionA__subtitle {
     margin: 0;
     padding: 0;
   }
+  .main__sectionA__subtitle {
+    padding-left: 1em;
+  }
   .main__contact {
-    border-radius: 0;
     width: 100vw;
     position: static;
     margin: 0;
-    justify-content: start;
-    align-items: start;
-    padding: clamp(1.4em, 1em + 1vw, 2em);
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+  .main__contact span {
+    padding-left: 1em;
   }
 }/*# sourceMappingURL=main.css.map */
