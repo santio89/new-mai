@@ -1,7 +1,5 @@
 #mai
-
-
 #landing-page
 
 
-#https://new-mai.netlify.app/
+https://new-mai.netlify.app/
