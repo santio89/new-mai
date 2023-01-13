@@ -1,0 +1,121 @@
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(71, 206, 255);
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 1rem + 1vw, 2.4rem);
+
+    &__sectionA {
+        position: relative;
+        left: 8%;
+        color: black;
+        background: rgba(255, 255, 255, .8);
+        border-radius: 21% 79% 70% 30%/ 59% 41% 59% 41%;
+        padding: 4em;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: .8em;
+        font-size: 1.2em;
+        transition: outline 50ms, background-color 100ms, background-image 100ms;
+
+        &__title {
+            font-weight: 700;
+            color: #079dd3;
+            line-height: 1;
+            font-size: 1.4em;
+            padding-right: 4ch;
+        }
+
+        &__subtitle {
+            font-size: .8em;
+            color: rgb(40, 40, 40);
+            display: flex;
+            flex-flow: column wrap;
+            gap: .2em;
+            margin-left: 6em;
+            padding-right: 4ch;
+        }
+
+        &:hover {
+            outline: 4px dashed #0086b6;
+            z-index: 10;
+            background: rgba(255, 255, 255, .9);
+
+        }
+    }
+
+    &__contact {
+        font-size: 1.4em;
+        font-weight: 700;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: .4em;
+        color: rgb(40, 40, 40);
+        border-radius: 70% 30% 21% 79% / 59% 41% 59% 41%;
+        background: rgba(0, 174, 255, .8);
+        padding: 4em;
+        position: relative;
+        left: -8%;
+        transition: outline 50ms, background-color 100ms, background-image 100ms;
+
+        &>span:nth-child(2) {
+            font-size: .8em;
+            display: flex;
+            gap: .4em;
+            line-height: 1;
+        }
+
+        &:hover {
+            outline: 4px dashed #0086b6;
+            z-index: 10;
+            background: rgba(0, 174, 255, .9);
+        }
+    }
+}
+
+
+.blob-1 {
+    position: absolute;
+
+}
+
+
+@media (max-width: 679px) {
+    .main {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        &__sectionA {
+            border-radius: 0;
+            width: 100vw;
+            position: static;
+            margin: 0;
+            justify-content: start;
+            align-items: start;
+
+            &__title,
+            &__subtitle {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        &__contact {
+            border-radius: 0;
+            width: 100vw;
+            position: static;
+            margin: 0;
+            justify-content: start;
+            align-items: start;
+        }
+    }
+}
